@@ -1,0 +1,34 @@
+﻿<Window x:Class="lab2.Planet_Edit_Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab2"
+        mc:Ignorable="d"
+        Title="Planet_Edit_Window" Height="600" Width="500">
+    <Grid>
+        <TextBlock FontSize="13" HorizontalAlignment="Left" Margin="14,10,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top"/>
+        <TextBox x:Name="pnameBox" MaxLength="250" TextAlignment="Center"  Margin="14,32,16.4,501.4" Text="{Binding Path=Name, Mode=TwoWay}" />
+
+        <TextBlock FontSize="13" HorizontalAlignment="Left" Margin="14,74,0,0" TextWrapping="Wrap" Text="Radius" VerticalAlignment="Top"/>
+        <TextBox x:Name="pnameBox2" MaxLength="250" TextAlignment="Center"  Margin="14,96,16.4,437.4" Text="{Binding Path=Radius, Mode=TwoWay}" />
+
+        <TextBlock FontSize="13" HorizontalAlignment="Left" Margin="14,138,0,0" TextWrapping="Wrap" Text="Mass" VerticalAlignment="Top"/>
+        <TextBox x:Name="pnameBox3" MaxLength="250" TextAlignment="Center"  Margin="14,160,16.4,373.4" Text="{Binding Path=Mass, Mode=TwoWay}" />
+
+        <TextBlock FontSize="13" HorizontalAlignment="Left" Margin="14,202,0,0" TextWrapping="Wrap" Text="Rotation" VerticalAlignment="Top"/>
+        <TextBox x:Name="pnameBox4" MaxLength="250" TextAlignment="Center"  Margin="14,224,16.4,309.4" Text="{Binding Path=Rotation, Mode=TwoWay}" />
+
+        <TextBlock FontSize="13" HorizontalAlignment="Left" Margin="16,266,0,0" TextWrapping="Wrap" Text="Star" VerticalAlignment="Top"/>
+        <TextBox x:Name="pnameBox5" MaxLength="250" TextAlignment="Center"  Margin="16,288,14.4,245.4" Text="{Binding Path=Star, Mode=TwoWay}" />
+
+        <TextBlock FontSize="13" HorizontalAlignment="Left" Margin="19,330,0,0" TextWrapping="Wrap" Text="Orbit" VerticalAlignment="Top"/>
+        <TextBox x:Name="pnameBox6" MaxLength="250" TextAlignment="Center"  Margin="14,352,16.4,181.4" Text="{Binding Path=Orbit, Mode=TwoWay}" />
+
+        <TextBlock FontSize="13" HorizontalAlignment="Left" Margin="16,394,0,0" TextWrapping="Wrap" Text="Rotation_around" VerticalAlignment="Top"/>
+        <TextBox x:Name="pnameBox7" MaxLength="250" TextAlignment="Center"  Margin="16,416,14.4,117.4" Text="{Binding Path=Rotation_around, Mode=TwoWay}" />
+
+        <Button FontSize="20" x:Name="SaveButton" Content="Save" HorizontalAlignment="Center" Margin="155,495,156.4,0" VerticalAlignment="Top" Width="175" Click="ESaveButton_Click" RenderTransformOrigin="0.732,0.719" Height="40"/>
+
+    </Grid>
+</Window>
