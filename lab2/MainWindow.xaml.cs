@@ -108,17 +108,20 @@ namespace lab2
 
         private void Open_Click1(object sender, RoutedEventArgs e)
         {
-            var dialog = new System.Windows.Forms.OpenFileDialog();
-            DialogResult result = dialog.ShowDialog();
-            col.LoadfromFile(dialog.FileName);
+            var dialog = new OpenFileDialog();
+            dialog.Filter = "Binary files (*.txt)|*.txt";
+            dialog.ShowDialog();
+            if (!string.IsNullOrEmpty(dialog.FileName))
+                col.LoadfromFile(dialog.FileName);
         }
 
         private void Open_Click2(object sender, RoutedEventArgs e)
         {
-            var dialog = new System.Windows.Forms.OpenFileDialog();
+            var dialog = new OpenFileDialog();
             dialog.Filter = "Binary files (*.dat)|*.dat";
-            DialogResult result = dialog.ShowDialog();
-            col.LoadFromBinaryFile(dialog.FileName);
+            dialog.ShowDialog();
+            if(!string.IsNullOrEmpty(dialog.FileName))
+                col.LoadFromBinaryFile(dialog.FileName);
         }
     }
 }
