@@ -67,7 +67,7 @@ namespace lab2
 
             }
 
-            using (StreamWriter sr = new StreamWriter(path, false, System.Text.Encoding.Default))
+            using (StreamWriter sr = new StreamWriter(path, false, Encoding.Default))
             {
                 sr.WriteLine(Asterisms.Count);
                 foreach (var asterism in Asterisms)
@@ -138,7 +138,7 @@ namespace lab2
         {
             currentFile = path;
             ClearCollection();
-            using (StreamReader sr = new StreamReader(path, System.Text.Encoding.Default))
+            using (StreamReader sr = new StreamReader(path, Encoding.Default))
             {
                 int AsterismCount = int.Parse(sr.ReadLine());
                 for(int i=0; i<AsterismCount; i++)

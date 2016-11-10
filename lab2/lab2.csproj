@@ -80,6 +80,7 @@
     <Compile Include="Edit_Star.xaml.cs">
       <DependentUpon>Edit_Star.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MyFormater.cs" />
     <Compile Include="Planet_Edit_Window.xaml.cs">
       <DependentUpon>Planet_Edit_Window.xaml</DependentUpon>
     </Compile>
