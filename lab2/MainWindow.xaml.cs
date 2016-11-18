@@ -20,7 +20,7 @@ namespace lab2
             PlanetsList.DataContext = tmpcol;
             Asterism ori = new Asterism();
             ori.Name = "Orion";
-            ori.Position = "4h 37m, −11°";
+            ori.Position = "4h 37m, 11°";
             tmpcol.AddAsterism(ori);
 
             Planet earth = new Planet();
@@ -29,7 +29,7 @@ namespace lab2
             earth.Mass = 1;
             earth.Rotation = 1;
             earth.Star = "Sun";
-            earth.Rotation_around = 1.1;
+            earth.Rotation_around = 1;
             earth.Orbit = 1;
             tmpcol.AddPlanet(earth);
 
@@ -109,7 +109,7 @@ namespace lab2
         private void Open_Click1(object sender, RoutedEventArgs e)
         {
             var dialog = new OpenFileDialog();
-            dialog.Filter = "Binary files (*.txt)|*.txt";
+            dialog.Filter = "Text files (*.txt)|*.txt";
             dialog.ShowDialog();
             if (!string.IsNullOrEmpty(dialog.FileName))
                 col.LoadfromFile(dialog.FileName);

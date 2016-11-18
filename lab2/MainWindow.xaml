@@ -28,6 +28,11 @@
                 <MenuItem Header="Star" Click="Edit_Click_2"></MenuItem>
                 <MenuItem Header="Planet" Click="Edit_Click_3"></MenuItem>
             </MenuItem>
+            <MenuItem Header="Add filter" >
+                <MenuItem Header="To Asterism"></MenuItem>
+                <MenuItem Header="To Star"></MenuItem>
+                <MenuItem Header="To Planet"></MenuItem>
+            </MenuItem>
             <MenuItem Header="Settings" >
                 <MenuItem Header="Clear" Click="Clear_Click"></MenuItem>
                 <MenuItem Header="About"></MenuItem>

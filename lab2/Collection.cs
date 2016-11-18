@@ -51,22 +51,9 @@ namespace lab2
             Planets.Clear();
         }
 
-        class Foo : IDisposable
-        {
-            public void Dispose()
-            {
-
-            }
-        }
-
         public void Save_to_File()
         {
             string  path = currentFile;
-            using (var foo = new Foo())
-            {
-
-            }
-
             using (StreamWriter sr = new StreamWriter(path, false, Encoding.Default))
             {
                 sr.WriteLine(Asterisms.Count);
